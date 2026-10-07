@@ -1,0 +1,8 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@tiendaluna.com.pa; spf=pass smtp.mailfrom=tiendaluna.com.pa; dmarc=pass header.from=tiendaluna.com.pa
+From: Tienda Luna - Pagos Yappy <pagos@tiendaluna.com.pa>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Comprobante de su compra
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Content-Type: text/plain; charset=utf-8
+
+Gracias por su compra.

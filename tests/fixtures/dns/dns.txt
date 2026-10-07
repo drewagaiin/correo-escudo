@@ -1,0 +1,180 @@
+# Respuestas DNS simuladas para las pruebas (formato: nombre TIPO dato).
+# Los dominios .test están reservados (RFC 2606): no existen en internet.
+
+# --- bueno.test: todo bien configurado (Google Workspace) ---
+bueno.test SOA ns1.bueno.test. hostmaster.bueno.test. 1 7200 3600 1209600 300
+bueno.test MX 1 smtp.google.com.
+bueno.test TXT v=spf1 include:_spf.google.com -all
+bueno.test TXT google-site-verification=abc123
+_spf.google.com TXT v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all
+_dmarc.bueno.test TXT v=DMARC1; p=reject; rua=mailto:dmarc@bueno.test; adkim=s
+google._domainkey.bueno.test TXT v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1FPoZpI1vmAp68fyXNs4CWjvLgy70hKoupQWV03FQoYaciqWadkMeqaBMvcnSoBxkyw6bcC/NWsZjOldUPYuo5wA0uRu8VuARPELv092TacAskGV2/FwcztD8eb6fKrN0xM7Fhb1zMmVtOYZJe/6+upV6nQ5xlaxarmcLChIad3PXG5pENcF+R+YcZ8mhcFbeHMugbVdcoIZjUjk+22hlNkskT7ajleCrkesvxTBUEbni/rsMShombbwQ6CeLPJSzKSf4+kK5ZB897alo61/MDFfTM6S4T3xTMxKSksoOOKo30SVO819ZG/1AZEGeIGh747jU0Fx8BcgRTVuc6tAHwIDAQAB
+_mta-sts.bueno.test TXT v=STSv1; id=20260101
+mta-sts.bueno.test A 192.0.2.10
+mta-sts.bueno.test HTTPS version: STSv1|mode: enforce|mx: smtp.google.com|max_age: 604800
+_smtp._tls.bueno.test TXT v=TLSRPTv1; rua=mailto:tls@bueno.test
+bueno.test DS 12345 13 2 ABCDEF
+
+# --- malo.test: Microsoft 365 sin SPF ni DMARC ni DKIM ---
+malo.test SOA ns1.malo.test. h.malo.test. 1 7200 3600 1209600 300
+malo.test MX 0 malo-test.mail.protection.outlook.com.
+malo.test TXT MS=ms12345678
+
+# --- debil.test: +all, DMARC p=none sin informes, pct, sp=none, DKIM 1024 ---
+debil.test SOA ns1.debil.test. h.debil.test. 1 7200 3600 1209600 300
+debil.test MX 10 mail.debil.test.
+debil.test TXT v=spf1 a mx ptr +all
+_dmarc.debil.test TXT v=DMARC1; p=none; pct=50
+default._domainkey.debil.test TXT v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtYue3rcm1hyGm3+952H2gdOj580aMJ6u5mLaSFgn+/fLwCkqwK52+/Ked2rJNp1rYvG/o9c8MUrYrg2JAHW8DTY2VwaynJ+3CR2c+kcbg8RWUbGArJ1CKKgE3Ngr7OoqSDKcDSYtwi2ueBkrjFi4+8nYd1abY/rs+xMiyBW5RqwIDAQAB
+
+# --- debil2.test: quarantine con sp=none ---
+debil2.test SOA ns1.debil2.test. h.debil2.test. 1 7200 3600 1209600 300
+debil2.test MX 10 mail.debil2.test.
+debil2.test TXT v=spf1 mx ~all
+_dmarc.debil2.test TXT v=DMARC1; p=quarantine; sp=none; rua=mailto:d@debil2.test
+
+# --- lookups.test: SPF que necesita más de 10 consultas DNS ---
+lookups.test SOA ns1.lookups.test. h.lookups.test. 1 7200 3600 1209600 300
+lookups.test MX 10 mail.lookups.test.
+lookups.test TXT v=spf1 include:a1.test include:a2.test include:a3.test include:a4.test mx -all
+a1.test TXT v=spf1 include:b1.test include:b2.test a mx -all
+a2.test TXT v=spf1 include:b3.test a -all
+a3.test TXT v=spf1 a mx exists:%{i}.x.test -all
+a4.test TXT v=spf1 ip4:192.0.2.0/24 -all
+b1.test TXT v=spf1 a -all
+b2.test TXT v=spf1 mx -all
+b3.test TXT v=spf1 a mx -all
+_dmarc.lookups.test TXT v=DMARC1; p=reject; rua=mailto:x@lookups.test
+
+# --- roto.test: dos SPF, dos DMARC, include a un dominio inexistente ---
+roto.test SOA ns1.roto.test. h.roto.test. 1 7200 3600 1209600 300
+roto.test MX 10 mail.roto.test.
+roto.test TXT v=spf1 -all
+roto.test TXT v=spf1 include:noexiste.test ~all
+_dmarc.roto.test TXT v=DMARC1; p=reject
+_dmarc.roto.test TXT v=DMARC1; p=none
+
+# --- incluye.test: include a dominio sin SPF y mecanismo desconocido ---
+incluye.test SOA ns1.incluye.test. h.incluye.test. 1 7200 3600 1209600 300
+incluye.test MX 10 mail.incluye.test.
+incluye.test TXT v=spf1 include:noexiste.test include:sinspf.test foo:bar ip4:999.x -all
+sinspf.test TXT hola
+_dmarc.incluye.test TXT v=DMARC1; p=reject; rua=mailto:x@incluye.test
+
+# --- parqueado.test: dominio sin correo ni protección ---
+parqueado.test SOA ns1.parqueado.test. h.parqueado.test. 1 7200 3600 1209600 300
+parqueado.test A 192.0.2.80
+
+# --- blindado.test: dominio sin correo bien blindado ---
+blindado.test SOA ns1.blindado.test. h.blindado.test. 1 7200 3600 1209600 300
+blindado.test MX 0 .
+blindado.test TXT v=spf1 -all
+_dmarc.blindado.test TXT v=DMARC1; p=reject;
+
+# --- falla.test: el DNS falla para DMARC (no debe decir "no tienes DMARC") ---
+falla.test SOA ns1.falla.test. h.falla.test. 1 7200 3600 1209600 300
+falla.test MX 10 mail.falla.test.
+falla.test TXT v=spf1 mx -all
+_dmarc.falla.test STATUS SERVFAIL
+
+# --- empresa.test y ventas.empresa.test: DMARC heredado del dominio principal ---
+empresa.test SOA ns1.empresa.test. h.empresa.test. 1 7200 3600 1209600 300
+_dmarc.empresa.test TXT v=DMARC1; p=reject; rua=mailto:d@empresa.test
+ventas.empresa.test SOA ns1.empresa.test. h.empresa.test. 1 7200 3600 1209600 300
+ventas.empresa.test MX 10 mx.ventas.empresa.test.
+ventas.empresa.test TXT v=spf1 ip4:192.0.2.5 -all
+s1._domainkey.ventas.empresa.test TXT k=ed25519; p=11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=
+
+# --- mtsrota.test: registro MTA-STS sin política publicada ---
+mtsrota.test SOA ns1.mtsrota.test. h.mtsrota.test. 1 7200 3600 1209600 300
+mtsrota.test MX 10 mail.mtsrota.test.
+mtsrota.test TXT v=spf1 mx -all
+_dmarc.mtsrota.test TXT v=DMARC1; p=reject; rua=mailto:x@mtsrota.test
+_mta-sts.mtsrota.test TXT v=STSv1; id=1
+
+# --- inyeccion.test: registros con secuencias de escape y comillas ---
+inyeccion.test SOA ns1.inyeccion.test. h.inyeccion.test. 1 7200 3600 1209600 300
+inyeccion.test MX 10 mail.inyeccion.test.
+inyeccion.test TXT v=spf1 include:"$(reboot)" ip4:192.0.2.1 -all
+_dmarc.inyeccion.test TXT v=DMARC1; p=reject; rua=mailto:"a\b"@x.test
+
+# --- Casos de la revisión independiente (v1.0.0) ---
+down.test SOA a b 1 2 3 4 5
+down.test STATUS SERVFAIL
+# parked domain with DNS failing on DMARC
+parq.test SOA a b 1 2 3 4 5
+parq.test MX 0 .
+parq.test TXT v=spf1 -all
+_dmarc.parq.test STATUS SERVFAIL
+# subdomain inherits p=reject; sp=none from parent
+org.test SOA a b 1 2 3 4 5
+_dmarc.org.test TXT v=DMARC1; p=reject; sp=none; rua=mailto:d@org.test
+pagos.org.test SOA a b 1 2 3 4 5
+pagos.org.test MX 10 mx.org.test.
+pagos.org.test TXT v=spf1 ip4:192.0.2.1 -all
+google._domainkey.pagos.org.test TXT v=DKIM1; k=ed25519; p=11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=
+# duplicated include subtree
+dup.test SOA a b 1 2 3 4 5
+dup.test MX 10 mx.dup.test.
+dup.test TXT v=spf1 include:big.test include:mid.test -all
+mid.test TXT v=spf1 include:big.test -all
+big.test TXT v=spf1 a mx a:x1.test a:x2.test a:x3.test a:x4.test -all
+_dmarc.dup.test TXT v=DMARC1; p=reject; rua=mailto:d@dup.test
+google._domainkey.dup.test TXT v=DKIM1; k=ed25519; p=11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=
+# DKIM selector servfail
+dk.test SOA a b 1 2 3 4 5
+dk.test MX 1 smtp.google.com.
+dk.test TXT v=spf1 include:_spf.google.com ~all
+_dmarc.dk.test TXT v=DMARC1; p=reject; rua=mailto:d@dk.test
+google._domainkey.dk.test STATUS SERVFAIL
+# quarantine pct=0
+pct.test SOA a b 1 2 3 4 5
+pct.test MX 10 mx.pct.test.
+pct.test TXT v=spf1 mx -all
+_dmarc.pct.test TXT v=DMARC1; p=quarantine; pct=0; rua=mailto:d@pct.test
+default._domainkey.pct.test TXT v=DKIM1; k=ed25519; p=11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=
+# missing p with rua
+nop.test SOA a b 1 2 3 4 5
+nop.test MX 10 mx.nop.test.
+nop.test TXT v=spf1 mx -all
+_dmarc.nop.test TXT v=DMARC1; rua=mailto:d@nop.test
+
+# --- Servidores de correo (para la comprobación de MX) ---
+mail.debil.test A 192.0.2.25
+mail.debil2.test A 192.0.2.25
+mail.falla.test A 192.0.2.25
+mail.incluye.test A 192.0.2.25
+mail.inyeccion.test A 192.0.2.25
+mail.lookups.test A 192.0.2.25
+mail.mtsrota.test A 192.0.2.25
+mail.roto.test A 192.0.2.25
+malo-test.mail.protection.outlook.com A 192.0.2.25
+mx.dup.test A 192.0.2.25
+mx.nop.test A 192.0.2.25
+mx.org.test A 192.0.2.25
+mx.pct.test A 192.0.2.25
+mx.ventas.empresa.test A 192.0.2.25
+smtp.google.com A 192.0.2.25
+
+# --- Auditoría v1.1: rangos SPF enormes, MX inexistente, informes DMARC ---
+ruaext.test SOA ns1.ruaext.test. h.ruaext.test. 1 7200 3600 1209600 300
+ruaext.test MX 1 smtp.google.com.
+ruaext.test TXT v=spf1 include:_spf.google.com -all
+_dmarc.ruaext.test TXT v=DMARC1; p=reject; rua=mailto:reports@dmarc-vendor.test,dmarc@ruaext.test
+dmarc-vendor.test SOA x
+ruamal.test SOA x
+ruamal.test MX 1 smtp.google.com.
+ruamal.test TXT v=spf1 include:_spf.google.com -all
+_dmarc.ruamal.test TXT v=DMARC1; p=reject; rua=dmarc@ruamal.test
+ancho.test SOA x
+ancho.test MX 1 smtp.google.com.
+ancho.test TXT v=spf1 ip4:0.0.0.0/1 ip4:128.0.0.0/1 include:spf.hosting-barato.test -all
+spf.hosting-barato.test TXT v=spf1 +all
+_dmarc.ancho.test TXT v=DMARC1; p=reject; rua=mailto:d@ancho.test
+mxmuerto.test SOA x
+mxmuerto.test MX 10 mail.proveedor-viejo-cerrado.test.
+mxmuerto.test TXT v=spf1 mx -all
+_dmarc.mxmuerto.test TXT v=DMARC1; p=reject; rua=mailto:d@mxmuerto.test
+_mta-sts.mxmuerto.test TXT v=STSv1; id=1
+mta-sts.mxmuerto.test A 192.0.2.1
+mta-sts.mxmuerto.test HTTPS version: STSv1|mode: enforce|mx: aspmx.l.google.com|max_age: 604800

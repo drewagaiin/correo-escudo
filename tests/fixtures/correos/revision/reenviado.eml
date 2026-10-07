@@ -1,0 +1,30 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@secure-alerta.com; spf=pass smtp.mailfrom=secure-alerta.com; dmarc=pass header.from=secure-alerta.com
+From: Juan <juan@secure-alerta.com>
+To: ventas@empresa-demo.com.pa
+Subject: Te reenvío
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain
+
+Mira esto.
+--b1
+Content-Type: message/rfc822
+
+From: x@y.com
+Subject: hola
+Content-Type: multipart/mixed; boundary="b2"
+
+--b2
+Content-Type: text/html
+
+<a href="http://203.0.113.9/login">www.bgeneral.com</a>
+--b2
+Content-Type: application/octet-stream; name="factura.pdf.exe"
+
+TVqQ
+--b2--
+--b1--

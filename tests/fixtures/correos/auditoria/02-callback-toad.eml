@@ -1,0 +1,13 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass smtp.mailfrom=gmail.com; dmarc=pass header.from=gmail.com
+From: Departamento de Facturacion <factur.depto8812@gmail.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Recibo #PP-88231 - Renovacion automatica
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <14498@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Estimado cliente,
+Su suscripción anual de Norton 360 se renovó por $499.99 y se cargará a su tarjeta.
+Si no autorizó este cargo, llame a nuestro centro de cancelaciones al +1 (808) 555-0199 dentro de las próximas 24 horas.
+ID de transacción: NX-55821

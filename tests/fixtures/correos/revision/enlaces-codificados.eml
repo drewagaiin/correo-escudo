@@ -1,0 +1,9 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@secure-alerta.com; spf=pass smtp.mailfrom=secure-alerta.com; dmarc=pass header.from=secure-alerta.com
+From: Soporte <a@secure-alerta.com>
+To: ventas@empresa-demo.com.pa
+Subject: Factura
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+Content-Type: text/html
+
+<a href=" https://203.0.113.5/x">www.bgeneral.com</a> <a/href="https://203.0.113.6/y">www.banistmo.com</a> <a href="&#104;ttps://203.0.113.7/z">www.yappy.com.pa</a>

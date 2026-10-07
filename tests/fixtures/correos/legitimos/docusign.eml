@@ -1,0 +1,11 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@docusign.net; spf=pass smtp.mailfrom=docusign.net; dmarc=pass header.from=docusign.net
+From: Juan Gómez via DocuSign <dse_NA4@docusign.net>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Completado: Contrato de arrendamiento 2027
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <26890@docusign.net>
+MIME-Version: 1.0
+Reply-To: Juan Gómez <jgomez@inmobiliaria-istmo.com.pa>
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Todos los firmantes completaron el documento.</p><a href="https://na4.docusign.net/Signing/EmailStart.aspx?a=1234">VER DOCUMENTO</a></body></html>

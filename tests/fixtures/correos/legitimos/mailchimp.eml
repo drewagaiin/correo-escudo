@@ -1,0 +1,10 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@mail.empresa.com; spf=pass smtp.mailfrom=mail.empresa.com; dmarc=pass header.from=mail.empresa.com
+From: Tienda <news@empresa.com>
+To: ventas@empresa-demo.com.pa
+Subject: Oferta: solo hoy
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+List-Unsubscribe: <https://x>
+Content-Type: text/html
+
+Visite <a href="https://empresa.us21.list-manage.com/track/click?u=1&id=2">www.empresa.com</a>. Oferta expira hoy, pago con tarjeta.

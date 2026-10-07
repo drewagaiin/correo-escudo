@@ -1,0 +1,10 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@secure-alerta.com; spf=pass smtp.mailfrom=secure-alerta.com; dmarc=pass header.from=secure-alerta.com
+From: Servicio al Cliente <notificaciones@secure-alerta.com>
+To: ventas@empresa-demo.com.pa
+Subject: Aviso importante sobre su cuenta
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Estimado cliente de Banco General: su cuenta será suspendida en 24 horas.</p><p>Inicie sesión aquí: <a href="https://bgeneral-seguridad.com/login">Ingresar a Banca en Línea</a></p>

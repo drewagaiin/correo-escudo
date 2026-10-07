@@ -1,0 +1,19 @@
+From: a@b.com
+Subject: x
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="Z"
+
+--Z
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+
+PEENCkhSRUY9IkhUVFA6
+Ly8xOTguNTEuMTAwLjcv
+eCI+d3d3LmJnZW5lcmFs
+LmNvbTwvQT4=
+--Z
+Content-Type: application/octet-stream
+Content-Disposition: inline; filename="ACCESO.LNK"
+
+AAAA
+--Z--

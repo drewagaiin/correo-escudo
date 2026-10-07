@@ -1,0 +1,14 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@proveedor-x.com.pa; spf=pass smtp.mailfrom=proveedor-x.com.pa; dmarc=pass header.from=proveedor-x.com.pa
+From: Cuentas por Cobrar <cobros@proveedor-x.com.pa>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Factura 2219 - instrucciones de pago
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <11547@proveedor-x.com.pa>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Buenos días,
+Les informamos que por auditoría interna nuestras cuentas en Banistmo fueron cerradas. A partir de la fecha favor realizar los pagos a la siguiente cuenta:
+Banco: Multibank  Cuenta corriente: 2000-1234-5678  A nombre de: Proveedor X
+Favor no realizar pagos a la cuenta anterior.
+Saludos

@@ -1,0 +1,11 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass smtp.mailfrom=gmail.com; dmarc=pass header.from=gmail.com
+From: Carlos Pérez <c.perez.ferrpac@gmail.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Solicitud
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <26001@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hola María, ¿estás disponible? Necesito que me ayudes con una compra discreta de tarjetas Amazon para unos clientes. Te explico por aquí, estoy en reunión y no puedo atender llamadas.
+Enviado desde mi iPhone

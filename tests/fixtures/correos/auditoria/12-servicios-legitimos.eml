@@ -1,0 +1,12 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass smtp.mailfrom=gmail.com; dmarc=pass header.from=gmail.com
+From: Banca en Línea Notificaciones <notif.bancaenlinea@gmail.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Actualice sus datos
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <16010@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Estimado cliente, por normativa de la Superintendencia debe confirmar sus datos y su clave de acceso.</p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf-abc/viewform">Confirmar ahora</a> |
+<a href="https://www.canva.com/design/DAF123/view">Ver aviso</a> | <a href="https://acme-pagos.notion.site/Portal-123">Portal</a></body></html>

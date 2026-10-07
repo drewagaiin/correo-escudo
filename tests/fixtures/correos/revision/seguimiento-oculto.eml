@@ -1,0 +1,6 @@
+Authentication-Results: mx.google.com; spf=pass smtp.mailfrom=x.com; dkim=pass header.i=@x.com; dmarc=pass header.from=x.com
+From: Info <info@x.com>
+Subject: Aviso
+Content-Type: text/html; charset=utf-8
+
+<a href="https://attacker.us21.list-manage.com/track/click?u=1&id=2&e=3">www.banistmo.com</a>

@@ -1,0 +1,21 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@notificaciones-m365.com; spf=pass smtp.mailfrom=notificaciones-m365.com; dmarc=pass header.from=notificaciones-m365.com
+From: Microsoft 365 Seguridad <alerta@notificaciones-m365.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Acción requerida: MFA expira
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <28611@notificaciones-m365.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Su autenticación multifactor expira. Escanee el código QR adjunto con su teléfono para reactivar su cuenta antes de 24 horas.
+
+--b1
+Content-Type: image/png; name="qr.png"
+Content-Disposition: inline; filename="qr.png"
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==
+--b1--

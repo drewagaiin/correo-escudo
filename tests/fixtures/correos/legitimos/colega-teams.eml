@@ -1,0 +1,9 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@empresa-demo.com.pa; spf=pass smtp.mailfrom=empresa-demo.com.pa; dmarc=pass header.from=empresa-demo.com.pa
+From: Ana Pérez <ana@empresa-demo.com.pa>
+To: ventas@empresa-demo.com.pa
+Subject: Reunión de Teams mañana
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+Content-Type: text/plain
+
+Hola, nos vemos mañana a las 10.

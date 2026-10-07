@@ -1,0 +1,6 @@
+# Informes generados y correos analizados: pueden contener datos personales
+informe*
+*.json
+correos-reales/
+ESTUDIO.md
+APRENDE.md

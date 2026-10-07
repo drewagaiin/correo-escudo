@@ -1,0 +1,14 @@
+Authentication-Results: mx.empresa-demo.com.pa;
+       spf=fail smtp.mailfrom=empresa-demo.com.pa;
+       dkim=none;
+       dmarc=fail (p=QUARANTINE) header.from=empresa-demo.com.pa
+Received: from unknown (HELO pc) ([103.77.10.5]) by mx.empresa-demo.com.pa; Wed, 7 Oct 2026 06:00:01 -0500
+Authentication-Results: mx.empresa-demo.com.pa; spf=pass; dkim=pass; dmarc=pass
+From: Soporte TI <soporte@empresa-demo.com.pa>
+To: todos@empresa-demo.com.pa
+Subject: Actualice su contraseña hoy
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Content-Type: text/plain; charset=utf-8
+
+Su contraseña expira hoy. Inicie sesión inmediatamente para conservarla:
+https://empresa-demo-com-pa.login-portal.xyz/owa

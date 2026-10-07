@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Análisis estático
+        run: shellcheck --severity=style correo-escudo.sh
+
+  test:
+    name: Pruebas en ${{ matrix.image }}
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        image:
+          - kalilinux/kali-rolling
+          - debian:12
+          - ubuntu:24.04
+          - ubuntu:22.04
+    container: ${{ matrix.image }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Instalar dependencias
+        run: |
+          apt-get update -q
+          DEBIAN_FRONTEND=noninteractive apt-get install -y -q bats jq openssl dnsutils curl ca-certificates
+
+      - name: Pruebas (sin red)
+        run: bats tests/correo.bats
+
+      - name: Prueba real contra un dominio público (informativa)
+        run: ./correo-escudo.sh dominio github.com --no-color || true

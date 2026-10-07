@@ -1,0 +1,9 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass smtp.mailfrom=gmail.com; dmarc=pass header.from=gmail.com
+From: Cliente Juan <juan.cliente@gmail.com>
+To: ventas@empresa-demo.com.pa
+Subject: Comprobante de pago Yappy
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+Content-Type: text/plain
+
+Buenas, le envío el comprobante del pago por Yappy de la factura 123.

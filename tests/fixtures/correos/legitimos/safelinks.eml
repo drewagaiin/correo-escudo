@@ -1,0 +1,9 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@proveedor.com; spf=pass smtp.mailfrom=proveedor.com; dmarc=pass header.from=proveedor.com
+From: Proveedor <ventas@proveedor.com>
+To: ventas@empresa-demo.com.pa
+Subject: Cotización
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+Content-Type: text/html
+
+Visite <a href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.proveedor.com%2F&data=05&reserved=0">www.proveedor.com</a> para más detalles.

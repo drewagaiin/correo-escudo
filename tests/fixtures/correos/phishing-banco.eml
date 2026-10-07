@@ -1,0 +1,34 @@
+Return-Path: <alertas@bgeneral-seguridad.com>
+Received: from mail.bgeneral-seguridad.com (mail.bgeneral-seguridad.com [45.88.12.9])
+        by mx.empresa-demo.com.pa with ESMTPS id 4f1a; Mon, 5 Oct 2026 08:14:02 -0500
+Authentication-Results: mx.empresa-demo.com.pa;
+       spf=pass smtp.mailfrom=bgeneral-seguridad.com;
+       dkim=none;
+       dmarc=none header.from=bgeneral-seguridad.com
+From: "Banco General" <alertas@bgeneral-seguridad.com>
+To: contabilidad@empresa-demo.com.pa
+Subject: =?UTF-8?B?QXZpc28gdXJnZW50ZTogc3UgY3VlbnRhIGhhIHNpZG8gc3VzcGVuZGlkYQ==?=
+Date: Mon, 5 Oct 2026 08:13:55 -0500
+Message-ID: <a1b2c3@bgeneral-seguridad.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==b1=="
+
+--==b1==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Estimado cliente: su cuenta ha sido suspendida. Verifique su cuenta en 24 h=
+oras: http://185.231.44.17/bg/login.php?id=3D8812
+--==b1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PHA+RXN0aW1hZG8gY2xpZW50ZSw8L3A+CjxwPkRldGVjdGFtb3MgYWN0aXZp
+ZGFkIGludXN1YWwuIFN1IGN1ZW50YSBoYSBzaWRvIDxiPnN1c3BlbmRpZGE8L2I+LiBEZWJlIHZl
+cmlmaWNhciBzdSBjdWVudGEKZW4gbGFzIHByJm9hY3V0ZTt4aW1hcyAyNCBob3JhcyBvIHNlciZh
+YWN1dGU7IGJsb3F1ZWFkYSBkZSBmb3JtYSBwZXJtYW5lbnRlLjwvcD4KPHA+PGEgaHJlZj0iaHR0
+cDovLzE4NS4yMzEuNDQuMTcvYmcvbG9naW4ucGhwP2lkPTg4MTIiIHN0eWxlPSJjb2xvcjpibHVl
+Ij5odHRwczovL3d3dy5iZ2VuZXJhbC5jb20vdmVyaWZpY2FyPC9hPjwvcD4KPHA+SW5ncmVzZSBz
+dSB1c3VhcmlvIHkgY29udHJhc2UmbnRpbGRlO2EgcGFyYSBjb25maXJtYXIgc3VzIGRhdG9zLjwv
+cD4KPHA+QmFuY28gR2VuZXJhbCAmY29weTsgMjAyNjwvcD48L2JvZHk+PC9odG1sPg==
+--==b1==--

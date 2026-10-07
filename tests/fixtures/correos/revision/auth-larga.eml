@@ -1,0 +1,68 @@
+Authentication-Results: mx.google.com;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s1 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s2 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s3 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s4 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s5 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s6 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s7 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s8 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s9 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s10 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s11 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s12 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s13 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s14 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s15 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s16 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s17 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s18 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s19 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s20 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s21 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s22 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s23 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s24 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s25 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s26 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s27 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s28 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s29 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s30 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s31 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s32 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s33 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s34 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s35 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s36 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s37 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s38 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s39 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s40 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s41 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s42 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s43 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s44 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s45 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s46 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s47 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s48 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s49 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s50 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s51 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s52 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s53 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s54 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s55 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s56 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s57 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s58 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s59 header.b=AbCdEfGh;
+       dkim=neutral (body hash did not verify) header.i=@empresa-demo.com.pa header.s=s60 header.b=AbCdEfGh;
+       spf=softfail smtp.mailfrom=evil.com;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=empresa-demo.com.pa
+From: Gerencia <gerente@empresa-demo.com.pa>
+Subject: Pago
+Content-Type: text/plain
+
+Por favor procesa hoy el pago. Gracias.

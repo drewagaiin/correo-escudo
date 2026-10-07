@@ -1,0 +1,10 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@bgeneral.com; spf=pass smtp.mailfrom=bgeneral.com; dmarc=pass header.from=bgeneral.com
+From: Banco General <notificaciones@bgeneral.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Estado de cuenta disponible
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <23283@bgeneral.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Su estado de cuenta está disponible en <a href="https://www.bgeneral.com.pa/personas">bgeneral.com</a></p></body></html>

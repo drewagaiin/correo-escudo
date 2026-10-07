@@ -1,0 +1,6 @@
+Authentication-Results: spf=fail (sender IP is 203.0.113.9) smtp.mailfrom=evil.com; dkim=none (message not signed) header.d=none;dmarc=none action=none header.from=proveedor.com;compauth=fail reason=601
+From: Proveedor <pagos@proveedor.com>
+Subject: Factura
+Content-Type: text/plain
+
+Por favor procesa hoy el pago. Gracias.

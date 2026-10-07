@@ -1,0 +1,11 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@sharepointonline.com; spf=pass smtp.mailfrom=sharepointonline.com; dmarc=pass header.from=sharepointonline.com
+From: Ana Pérez (vía SharePoint) <no-reply@sharepointonline.com>
+To: maria@ferreteria-pacifico.com.pa
+Subject: Ana Pérez compartió "Cotizacion.xlsx" con usted
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <29491@sharepointonline.com>
+MIME-Version: 1.0
+Reply-To: ana@empresa-demo.com.pa
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Ana Pérez compartió un archivo con usted.</p><a href="https://empresademo.sharepoint.com/:x:/s/Ventas/EaBc123?e=xyz">Cotizacion.xlsx</a></body></html>

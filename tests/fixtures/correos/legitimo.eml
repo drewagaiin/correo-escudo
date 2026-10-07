@@ -1,0 +1,27 @@
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@github.com header.s=pf2014;
+       spf=pass smtp.mailfrom=noreply@github.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=github.com
+From: GitHub <noreply@github.com>
+To: andres@example.com
+Subject: Novedades de octubre
+Date: Thu, 1 Oct 2026 10:00:00 +0000
+Message-ID: <news-2026-10@github.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b"
+
+--b
+Content-Type: text/plain; charset=utf-8
+
+Novedades de octubre. Lee el blog: https://www.github.com/blog/octubre
+--b
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PGgxPk5vdmVkYWRlcyBkZSBvY3R1YnJlPC9oMT4KPHA+SG9sYSwgZXN0YXMg
+c29uIGxhcyBub3ZlZGFkZXMgZGUgdHUgY3VlbnRhLjwvcD4KPHA+PGEgaHJlZj0iaHR0cHM6Ly93
+d3cuZ2l0aHViLmNvbS9ibG9nL29jdHVicmUiPkxlZSBlbCBibG9nPC9hPiDCtwo8YSBocmVmPSJo
+dHRwczovL2RvY3MuZ2l0aHViLmNvbS9lcyI+aHR0cHM6Ly9kb2NzLmdpdGh1Yi5jb20vZXM8L2E+
+PC9wPgo8cD48YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vc2V0dGluZ3MvZW1haWxzIj5QcmVm
+ZXJlbmNpYXMgZGUgY29ycmVvPC9hPjwvcD48L2JvZHk+PC9odG1sPg==
+--b--

@@ -1,0 +1,31 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@secure-alerta.com; spf=pass smtp.mailfrom=secure-alerta.com; dmarc=pass header.from=secure-alerta.com
+From: Soporte <a@secure-alerta.com>
+To: ventas@empresa-demo.com.pa
+Subject: Factura
+Date: Wed, 7 Oct 2026 06:00:00 -0500
+Message-ID: <1@x>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain
+
+Adjunto.
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename*0="factura_";
+ filename*1="2026.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA
+--b1
+Content-Type: application/octet-stream; name="pago.exe."
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA
+--b1
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="recibo.scr "
+
+TVqQ
+--b1--

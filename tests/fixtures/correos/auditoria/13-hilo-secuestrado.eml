@@ -1,0 +1,17 @@
+Authentication-Results: mx.google.com; dkim=pass header.i=@distribuidora-ismto.com.pa; spf=pass smtp.mailfrom=distribuidora-ismto.com.pa; dmarc=pass header.from=distribuidora-ismto.com.pa
+From: Luis Rivas <lrivas@distribuidora-ismto.com.pa>
+To: maria@ferreteria-pacifico.com.pa
+Subject: RE: Orden de compra 7781
+Date: Wed, 7 Oct 2026 09:00:00 -0500
+Message-ID: <11245@distribuidora-ismto.com.pa>
+MIME-Version: 1.0
+In-Reply-To: <CAF7781abc@distribuidora-istmo.com.pa>
+References: <CAF7781abc@distribuidora-istmo.com.pa>
+Content-Type: text/plain; charset=utf-8
+
+Hola María, adjunto la factura de la OC 7781. Por favor procesar el pago esta semana a la cuenta indicada en la factura.
+
+-----Mensaje original-----
+De: Luis Rivas <lrivas@distribuidora-istmo.com.pa>
+Enviado: lunes, 5 de octubre de 2026
+Asunto: Orden de compra 7781

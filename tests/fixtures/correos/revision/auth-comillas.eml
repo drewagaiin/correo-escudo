@@ -1,0 +1,8 @@
+Authentication-Results: mx.google.com;
+       dkim=fail header.i=@proveedor.com;
+       spf=fail (google.com: domain of "); dkim=pass; dmarc=pass ("@evil.com does not designate 203.0.113.9 as permitted sender) smtp.mailfrom="); dkim=pass; dmarc=pass ("@evil.com
+From: Proveedor <pagos@proveedor.com>
+Subject: Factura
+Content-Type: text/plain
+
+Por favor procesa hoy el pago. Gracias.
